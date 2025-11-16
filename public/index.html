@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Entra HW Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Homework 2 – Entra External ID Demo</h1>
+
+    <div id="status">Not signed in</div>
+
+    <button id="btn-signin">Sign In</button>
+    <button id="btn-signout" style="display:none;">Sign Out</button>
+
+    <hr />
+
+    <!-- Protected section -->
+    <div id="protected" style="display:none;">
+      <h2>Protected Profile Page</h2>
+      <p>Welcome, <span id="user-name"></span>!</p>
+      <p>Your email: <span id="user-email"></span></p>
+    </div>
+
+    <!-- MSAL browser CDN -->
+    <script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
+
+    <!-- Config + UI logic -->
+    <script src="authConfig.js"></script>
+    <script src="authUI.js"></script>
+  </body>
+</html>
